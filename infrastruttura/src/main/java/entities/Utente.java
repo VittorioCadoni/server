@@ -3,6 +3,8 @@ package entities;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 @Entity
 
@@ -15,5 +17,7 @@ public class Utente {
     private String email;
 
     @OneToOne(mappedBy = "utente", cascade = CascadeType.ALL, orphanRemoval = true)
-    private LIST ordini;
+    private List ordini;
 }
+
+
