@@ -3,7 +3,6 @@ package entities;
 import jakarta.persistence.*;
 
 @Entity
-@Id
 
 public class DettaglioOrdine {
 
